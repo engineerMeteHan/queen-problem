@@ -29,7 +29,7 @@ void cozumYaz(void)         // Show solution, increase number
 {
     register int t, r;
     printf("\n\n\tCOZUM %u\n\n", ++sayi);
-    for(r = 0; r < VEZIRLER; r++)   // sýra
+    for(r = 0; r < VEZIRLER; r++)   // sÃ½ra
     {
         for(t = 1 << VEZIRLER - 1; t > 0; t >>= 1)
             printf(" %c", tahta[r] == t ? 'V' : '.');
@@ -37,6 +37,7 @@ void cozumYaz(void)         // Show solution, increase number
     }
 }
 
+/// This funsciton is an autocall function 
 void yerlestir(int sira)        // Place it in the next row
 {
     if (sira == VEZIRLER)       // All rows are full and checked
