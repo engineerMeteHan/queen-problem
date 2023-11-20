@@ -37,7 +37,7 @@ void cozumYaz(void)         // Show solution, increase number
     }
 }
 
-/// This funsciton is an autocall function 
+/// This funsciton is an recursive function 
 void yerlestir(int sira)        // Place it in the next row
 {
     if (sira == VEZIRLER)       // All rows are full and checked
